@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Express route handlers
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   res.status(200).send('Simple Node App Working!');
 });
 
