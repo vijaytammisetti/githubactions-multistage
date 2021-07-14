@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cd /home/ec2-user/node/api
+cd /home/ec2-user/node
 npm install
-pm2 start -f server.js
+npm start

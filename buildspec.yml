@@ -8,13 +8,10 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - cd my-app
-      - npm install
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - npm run build
   post_build:
     commands:
       - echo Build completed on `date`
@@ -23,7 +20,4 @@ phases:
 # used only for building and testing.
 artifacts:
   files:
-    - 'my-app/build/**/*'
-    - 'api/**/*'
-    - 'deploy_scripts/**/*'
-    - 'appspec.yml'
+    - '**/*'
